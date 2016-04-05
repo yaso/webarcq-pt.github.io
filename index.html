@@ -69,21 +69,16 @@ shape="rect"><strong> traduções.</strong></a>.</p>
 <hr /></div>
 </div>
 <div class="section">
-<h2 class="notoc"><a name="abstract" id="abstract" shape=
-"rect">Resumo</a></h2>
+<h2 class="notoc"><a name="abstract" id="abstract" shape= "rect">Resumo</a></h2>
 <p><a name="p5" id="p5"></a>A World Wide Web usa tecnologias relativamente simples com suficientes escalabilidade, eficiência e utilidade, que resultaram em um formidável espaço de informações de recursos inter-relacionados, de diferentes idiomas, culturas e mídias. Em um esforço para preservar essas propriedades do espaço de informações, mesmo com a evolução das tecnologias, este documento de arquitetura discute os principais componentes do projeto da Web. São eles: a identificação de recursos, a representação do estado do recurso e os protocolos que apoiam a interação entre agentes e recursos no espaço. Relacionamos os principais componentes do projeto, restrições e boas práticas aos princípios e propriedades que apoiam.
 </p>
 </div>
 <div class="section">
 <h2 class="notoc"><a name="status" id="status" shape="rect">Situação deste documento</a></h2>
-<p><a name="p6" id="p6"></a><em>Esta seção descreve a situação deste documento à época de sua publicação. Outros documentos podem substituir este. Uma lista de publicações atuais do W3C e as últimas revisões deste relatório técnico podem ser encontradas no índice de relatórios técnicos do W3C nos <a href="http://www.w3.org/TR/" shape="rect">Índice de reports técnicos do W3C</a> at http://www.w3.org/TR/.</em></p>
+<p><a name="p6" id="p6"></a><em>Esta seção descreve a situação deste documento à época de sua publicação. Outros documentos podem substituir este. Uma lista de publicações atuais do W3C e as últimas revisões deste relatório técnico podem ser encontradas no índice de relatórios técnicos do W3C no <a href="http://www.w3.org/TR/" shape="rect"> índice de reports técnicos do W3C</a></em></p>
 <p><a name="p7" id="p7"></a>Esta é a Recomendação de “Arquitetura da World Wide Web, Volume Um”, de 15 de dezembro de 2004. Este documento foi revisado por membros do W3C, por desenvolvedores de software e por outros grupos e partes interessadas do W3C, sendo endossado pelo Diretor como uma Recomendação W3C. É um documento estável e pode ser usado como material de referência ou citado em outro documento. O papel do W3C ao fazer esta Recomendação é chamar atenção para a especificação e promover sua ampla implementação. Isso aumenta a funcionalidade e a interoperabilidade da Web.</p>
 
-<p><a name="p8" id="p8"></a>Este documento foi desenvolvido pelo
-<a href="http://www.w3.org/2001/tag/" shape="rect"> Grupo Técnico de Arquitetura do W3C (TAG)</a>, que mantém, em um<a href=
-"http://www.w3.org/2001/07/19-tag" shape="rect"> estatuto </a> <a href="http://www.w3.org/2001/tag/issues.html" shape=
-"rect">uma lista de questões arquitetônicas.</a>. O escopo deste documento é um subgrupo útil dessas questões; não pretendendo abordar todas elas. O TAG pretende abordar as questões remanescentes (e futuras) agora que o Volume Um está publicado como Recomendação W3C. Está disponível um <a href="http://www.w3.org/2001/tag/webarch/changes.html"
-shape="rect">histórico completo</a> das mudanças deste documento. Por favor envie comentários sobre este documento para public-webarch-comments@w3.org (arquivo público de public-webarch-comments). A discussão técnica do TAG ocorre em www-tag@w3.org <a href=
+<p><a name="p8" id="p8"></a>Este documento foi desenvolvido pelo <a href="http://www.w3.org/2001/tag/" shape="rect"> Grupo Técnico de Arquitetura do W3C (TAG)</a>, que mantém, um<a href= "http://www.w3.org/2001/07/19-tag" shape="rect"> estatuto </a> <a href="http://www.w3.org/2001/tag/issues.html" shape= "rect"> com uma lista de questões arquitetônicas.</a>. O escopo deste documento é um subgrupo útil dessas questões; não pretendendo abordar todas elas. O TAG pretende abordar as questões remanescentes (e futuras) agora que o Volume Um está publicado como Recomendação W3C. Está disponível um <a href="http://www.w3.org/2001/tag/webarch/changes.html" shape="rect">histórico completo</a> das mudanças deste documento. Por favor envie comentários sobre este documento para public-webarch-comments@w3.org (arquivo público de public-webarch-comments). A discussão técnica do TAG ocorre em www-tag@w3.org <a href=
 "http://lists.w3.org/Archives/Public/public-webarch-comments/"
 shape="rect">(arquivo público de www-tag).</a></p>
 <p><a name="p9" id="p9"></a>Este documento foi produzido sob a  <a href=
@@ -94,8 +89,7 @@ shape="rect">(arquivo público de www-tag).</a></p>
 shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 </div>
 <div class="section">
-<h2 class="notoc"><a id="contents" name="contents" shape=
-"rect">Sumário</a></h2>
+<h2 class="notoc"><a id="contents" name="contents" shape= "rect">Sumário</a></h2>
 <ul class="toc">
 <li class="tocline1"><a href="#intro">1. Introdução</a>
 <ul class="toc">
@@ -108,8 +102,7 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 </li>
 </ul>
 </li>
-<li class="tocline1"><a href="#identification">2.
-Identificação</a>
+<li class="tocline1"><a href="#identification">2. Identificação</a>
 <ul class="toc">
 <li class="tocline2"><a href="#uri-benefits">2.1. Benefícios de URIs</a></li>
 <li class="tocline2"><a href="#id-resources">2.2. Relações URI/Recurso</a>
@@ -152,6 +145,7 @@ Identificação</a>
 <li class="tocline3"><a href="#frag-coneg">3.2.2. Identificadores de fragmento e negociação de conteúdo</a></li>
 </ul>
 </li>
+</ul>
 <li class="tocline2"><a href="#metadata-inconsistencies">3.3.Inconsistências entre Dados de Representação e Metadados</a></li>
 <li class="tocline2"><a href="#safe-interaction">3.4. Interações Seguras</a>
 <ul class="toc">
