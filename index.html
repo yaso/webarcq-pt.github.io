@@ -146,6 +146,7 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 </ul>
 </li>
 </ul>
+<ul>
 <li class="tocline2"><a href="#metadata-inconsistencies">3.3.Inconsistências entre Dados de Representação e Metadados</a></li>
 <li class="tocline2"><a href="#safe-interaction">3.4. Interações Seguras</a>
 <ul class="toc">
@@ -393,25 +394,19 @@ shape="rect">Identificadores globais</a></span></p>
 <p class="principle"><a name="p34" id="p34">Identificadores Globais </a>Nomes globais levam a efeitos de rede globais.
 </p>
 </div>
-<p><a name="p35" id="p35"></a>Este princípio remonta, pelo menos, até o trabalho seminal de Douglas Engelbart sobre sistemas abertos de hipertexto; veja a seção <a href=
-"http://www.bootstrap.org/augdocs/augment-132082.htm#11K" shape= "rect">Todo Objeto Acessível</a> em [<a href="#Eng90" shape= "rect">Eng90</a>].</p>
-<div class="section"> <h3>2.1. <a name="uri-benefits" id="uri-benefits" shape=
-"rect">Benefícios dos URIs</a></h3>
+<p><a name="p35" id="p35"></a>Este princípio remonta, pelo menos, até o trabalho seminal de Douglas Engelbart sobre sistemas abertos de hipertexto; veja a seção <a href= "http://www.bootstrap.org/augdocs/augment-132082.htm#11K" shape= "rect">Todo Objeto Acessível</a> em [<a href="#Eng90" shape= "rect">Eng90</a>].</p>
+<div class="section"> <h3>2.1. <a name="uri-benefits" id="uri-benefits" shape= "rect">Benefícios dos URIs</a></h3>
 <p><a name="p36" id="p36"></a>A escolha da sintaxe para identificadores globais é um tanto arbitrária; o importante é seu alcance global. O <a name="def-uri" id="def-uri"><dfn>Uniform Resource Identifier</dfn></a><a href="#URI" shape="rect">URI</a> foi implantado com sucesso desde a criação da Web. Existem benefícios substanciais em participar da rede existente de URIs, incluindo links, bookmarking, caching e indexação por motores de busca, e há custos substanciais para a criação de um novo sistema de identificação que tenha as mesmas propriedades dos URIs.</p>
 <div class="boxedtext">
-<p><a name="p37" id="p37"></a> <span class="practicelab">Boa prática:<a name="pr-use-uris" id="pr-use-uris" shape=
-"rect">Identificar com URIs</a></span></p>
+<p><a name="p37" id="p37"></a> <span class="practicelab"> Boa prática:<a name="pr-use-uris" id="pr-use-uris" shape= "rect">Identificar com URIs</a></span></p>
 <p class="practice"><a name="p38" id="p38"></a> para se beneficiar e aumentar o valor da World Wide Web, agentes devem fornecer URIs como identificadores de recursos.</p>
 </div>
-<p><a name="p39" id="p39"></a>Um recurso deve ter um URI associado caso outra parte queira, razoavelmente, criar um link de hipertexto para ele, fazer ou refutar declarações a respeito, recuperar ou armazenar em cache uma representação dele, incluí-lo todo ou parte dele por referência em outra representação, anotar nele ou realizar outras operações. Os desenvolvedores de software devem saber que é útil o compartilhamento de URIs entre aplicativos, mesmo que essa utilidade não seja evidente desde o início. O texto de conclusões do TAG <cite>"<a href=
-"http://www.w3.org/2001/tag/doc/whenToUseGet.html" shape= "rect">“URIs, acessibilidade e o uso de HTTP GET e POST”</a>"</cite> discute benefícios adicionais e tece considerações sobre acessibilidade de URI.
+<p><a name="p39" id="p39"></a>Um recurso deve ter um URI associado caso outra parte queira, razoavelmente, criar um link de hipertexto para ele, fazer ou refutar declarações a respeito, recuperar ou armazenar em cache uma representação dele, incluí-lo todo ou parte dele por referência em outra representação, anotar nele ou realizar outras operações. Os desenvolvedores de software devem saber que é útil o compartilhamento de URIs entre aplicativos, mesmo que essa utilidade não seja evidente desde o início. O texto de conclusões do TAG <cite>"<a href= "http://www.w3.org/2001/tag/doc/whenToUseGet.html" shape= "rect">“URIs, acessibilidade e o uso de HTTP GET e POST”</a>" </cite> discute benefícios adicionais e tece considerações sobre acessibilidade de URI. </p>
 <p><a name="p40" id="p40"></a><strong>Observação:</strong> Alguns esquemas de URI (como a especificação de esquema de URI “ftp”) usam o termo “designar” quando este documento usa “identificar”.</p>
 </div>
 <div class="section">
-<h3>2.2. <a name="id-resources" id="id-resources" shape=
-"rect">Relações URI/Recurso</a></h3>
-<p><a name="p41" id="p41"></a>No projeto, o URI identifica um recurso. Não limitamos o escopo do que pode ser um <a name=
-"def-resource" id="def-resource"><dfn>recurso</dfn></a>. O termo “recurso” é usado em um sentido geral para o que pode ser identificado por um URI. É normal, na Web de hipertexto, descrever páginas Web, imagens, catálogos de produtos, etc. como “recursos”. A característica distintiva desses recursos é que todas as suas características essenciais podem ser expressas em uma mensagem. Identificamos esse conjunto como “<a name="def-information-resource" id= "def-information-resource"><dfn>recursos de informação</dfn></a>.”</p>
+<h3>2.2. <a name="id-resources" id="id-resources" shape= "rect">Relações URI/Recurso</a></h3>
+<p><a name="p41" id="p41"></a>No projeto, o URI identifica um recurso. Não limitamos o escopo do que pode ser um <a name= "def-resource" id="def-resource"><dfn>recurso</dfn></a>. O termo “recurso” é usado em um sentido geral para o que pode ser identificado por um URI. É normal, na Web de hipertexto, descrever páginas Web, imagens, catálogos de produtos, etc. como “recursos”. A característica distintiva desses recursos é que todas as suas características essenciais podem ser expressas em uma mensagem. Identificamos esse conjunto como “<a name="def-information-resource" id= "def-information-resource"><dfn>recursos de informação</dfn></a>.”</p>
 <p><a name="p42" id="p42"></a>Este documento é um exemplo de recurso de informação. Consiste de palavras, símbolos de pontuação, gráficos e outros artefatos que podem ser codificados, com diferentes graus de fidelidade, em uma sequência de bits. Não há nada sobre o conteúdo informativo fundamental deste documento que não possa, em princípio, ser transferido em uma mensagem. No caso deste documento, o conteúdo da mensagem é a  <a href="#def-representation" shape="rect">representação</a> do presente documento.</p>
 <p><a name="p43" id="p43"></a>No entanto, nosso uso do termo recurso é intencionalmente mais amplo. Outras coisas, como carros e cães (e, se você imprimiu este documento em folhas físicas de papel, o artefato que está segurando em sua mão), são recursos também. Contudo, não são recursos de informação, porque sua essência não é informação. Embora seja possível descrever um grande número de coisas sobre um carro ou um cão em uma sequência de bits, a soma dessas coisas vai ser sempre uma aproximação do caráter essencial do recurso.</p>
 <p><a name="p44" id="p44"></a>Definimos o termo “recurso de informação” porque observamos que é algo útil em discussões sobre tecnologia Web e pode ser útil na construção de especificações para facilidades criadas para uso na Web.</p>
@@ -499,8 +494,7 @@ shape="rect">RFC2397</a>] especifica que o recurso identificado por um URI de es
 </div>
 <p><a name="p75" id="p75"></a>Consumidores de URI também têm o dever de garantir a consistência do URI. Por exemplo, ao transcrever um URI, agentes não devem fazer codificação por cento de caracteres gratuitamente. O termo “caractere” refere-se a caracteres de URI, como definido na seção 2 de [<a href="#URI" shape="rect">URI</a>]; a codificação por cento é discutida na seção 2.1 daquela especificação.</p>
 <div class="boxedtext">
-<p><a name="p76" id="p76"></a> <span class="practicelab">Boa prática: <a name="lc-uri-chars" id="lc-uri-chars" shape=
-"rect"> Uso de URI consistente</a></span></p> <p class="practice"><a name="p77" id="p77"></a> Um agente que recebe um URI DEVE referir-se ao recurso associado usando o mesmo URI, caractere a caractere.</p>
+<p><a name="p76" id="p76"></a> <span class="practicelab">Boa prática: <a name="lc-uri-chars" id="lc-uri-chars" shape= "rect"> Uso de URI consistente</a></span></p> <p class="practice"><a name="p77" id="p77"></a> Um agente que recebe um URI DEVE referir-se ao recurso associado usando o mesmo URI, caractere a caractere.</p>
 </div>
 <p><a name="p78" id="p78"></a>Quando um alias de URI se torna comum, deve usar técnicas de protocolo, como redirecionamentos no lado servidor para relacionar os dois recursos. A comunidade se beneficia quando o <a href="#uri-ownership" shape="rect">o proprietário do URI </a> apoia o redirecionamento de um URI com alias ao URI “oficial” correspondente. Para mais informações sobre redirecionamento, veja seção 10.3, Redirecionamento, em [<a href="#RFC2616" shape= "rect">RFC2616</a>]. Veja também [<a href="#CHIPS" shape= "rect">CHIPS</a>] para uma discussão sobre as melhores práticas para  administradores de servidor.</p>
 </div>
