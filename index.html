@@ -135,10 +135,11 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 </li>
 <li class="tocline1"><a href="#interaction">3. Interação</a>
 <ul class="toc">
-<li class="tocline2"><a href="#dereference-uri">3.1.Usar uma URI para Acessar um Recurso</a></li>
+<li class="tocline2"><a href="#dereference-uri">3.1.Usar uma URI para Acessar um Recurso</a>
 <ul class="toc">
 <li class="tocline3"><a href="#dereference-details">3.1.1. Detalhes da obtenção de uma representação</a></li>
-<li class="tocline2"><a href="#internet-media-type">3.2. Tipos de Representação e de Meios de Internet</a></li>
+</ul></li>
+<li class="tocline2"><a href="#internet-media-type">3.2. Tipos de Representação e de Meios de Internet</a>
 <ul class="toc">
 <li class="tocline3"><a href="#media-type-fragid">3.2.1.  Tipos de representação e semântica de identificadores de fragmentos</a></li>
 <li class="tocline3"><a href="#frag-coneg">3.2.2. Identificadores de fragmento e negociação de conteúdo</a></li>
@@ -370,12 +371,10 @@ shape="rect">Especificações da Arquitetura (§7.1)</a> inclui referências a e
 "rect">Princípios, Restrições e Boas Práticas</a></h4>
 <p><a name="p31" id="p31"></a>Os pontos importantes deste documento são classificados da seguinte forma:</p>
 <dl>
-<dt><a name="cat-principle" id="cat-principle" shape=
-"rect">Princípio</a></dt>
+<dt><a name="cat-principle" id="cat-principle" shape="rect">Princípio</a></dt>
 <dd>Um princípio arquitetônico é uma regra fundamental que se aplica a um grande número de situações e variáveis. Princípios arquitetônicos incluem “separação de interesses”, “interface genérica”, “sintaxe autodescritiva”, “semântica evidente”, “efeito de rede” (Lei de Metcalfe) e a Lei de Amdahl: “A velocidade de um sistema é limitada por seu componente mais lento”.</dd>
-<dt><a name="cat-constraint" id="cat-constraint" shape=
-"rect">Restrição</a></dt>
-<dd>Em um projeto de Web, algumas escolhas, como os nomes dos elementos <code>p</code> e <code>li</code> em  HTML, a escolha do caractere de dois pontos (:) em URIs, ou o agrupamento de bits em unidades de oito bits (octetos), são um tanto arbitrárias; se <code>paragraph</code> fosse escolhido em vez de <code>p</code>, ou asterisco (*) em vez de dois pontos, o resultado no final seria, muito provavelmente, o mesmo. Este documento concentra-se em  escolhas de projeto mais importantes: escolhas de projeto que levam a restrições, ou seja, restrições de comportamento ou de interação dentro do sistema. Restrições podem ser impostas por motivos técnicos, políticos ou outras razões para alcançar propriedades desejáveis no sistema, tais como acessibilidade, alcance global, relativa facilidade de evolução, eficiência e extensibilidade dinâmica.
+<dt><a name="cat-constraint" id="cat-constraint" shape="rect">Restrição</a></dt>
+<dd>Em um projeto de Web, algumas escolhas, como os nomes dos elementos <code>p</code> e <code>li</code> em  HTML, a escolha do caractere de dois pontos (:) em URIs, ou o agrupamento de bits em unidades de oito bits (octetos), são um tanto arbitrárias; se <code>paragraph</code> fosse escolhido em vez de <code>p</code>, ou asterisco (*) em vez de dois pontos, o resultado no final seria, muito provavelmente, o mesmo. Este documento concentra-se em  escolhas de projeto mais importantes: escolhas de projeto que levam a restrições, ou seja, restrições de comportamento ou de interação dentro do sistema. Restrições podem ser impostas por motivos técnicos, políticos ou outras razões para alcançar propriedades desejáveis no sistema, tais como acessibilidade, alcance global, relativa facilidade de evolução, eficiência e extensibilidade dinâmica.</dd>
 <dt><a name="cat-practice" id="cat-practice" shape="rect"> Boas  Práticas</a></dt>
 <dd>Boas práticas - por desenvolvedores de software, autores de conteúdo, gestores de sites, usuários e projetistas de especificação – aumentam o valor da Web. </dd>
 </dl>
@@ -505,7 +504,7 @@ shape="rect">Reutilização de representação</a></h4>
 <p><a name="p80" id="p80"></a> <span class=
 "storylab">História</span></p>
 <div class="story">
-<p><a name="p81" id="p81"></a>Dirk gostaria de adicionar em seu website um link para o sítio de meteorologia de Oaxaca. Ele usa o URI http://weather.exemplo.com/oaxaca e nomeia seu link como “relatório meteorológico em Oaxaca em 1&#160 de agosto de 2004”. Nádia salienta que Dirk está criando expectativas enganosas para o URI que usou. A política do sítio de meteorologia de Oaxaca é que o URI em questão identifica um relatório sobre o clima atual em Oaxaca – para qualquer dia – e não sobre o tempo em 1º de agosto. Logicamente, em 1&#160 de agosto, o link de Dirk estará correto, mas no restante do tempo ele estará iludindo os leitores. Nádia indica para Dirk que os administradores do sítio de meteorologia de Oaxaca disponibilizam um URI diferente permanentemente designado para um recurso informando sobre o clima em 1º de agosto de 2004.</p>
+<p><a name="p81" id="p81"></a>Dirk gostaria de adicionar em seu website um link para o sítio de meteorologia de Oaxaca. Ele usa o URI http://weather.exemplo.com/oaxaca e nomeia seu link como “relatório meteorológico em Oaxaca em 1º de agosto de 2004”. Nádia salienta que Dirk está criando expectativas enganosas para o URI que usou. A política do sítio de meteorologia de Oaxaca é que o URI em questão identifica um relatório sobre o clima atual em Oaxaca – para qualquer dia – e não sobre o tempo em 1º de agosto. Logicamente, em 1º de agosto, o link de Dirk estará correto, mas no restante do tempo ele estará iludindo os leitores. Nádia indica para Dirk que os administradores do sítio de meteorologia de Oaxaca disponibilizam um URI diferente permanentemente designado para um recurso informando sobre o clima em 1º de agosto de 2004.</p>
 </div>
 </div>
 <p><a name="p82" id="p82"></a>
@@ -613,7 +612,7 @@ shape="rect">Direções Futuras para Identificadores</a></h3> <p><a name="p109" 
 <p><a name="p113" id="p113"></a> <span class=
 "storylab">História</span></p>
 <div class="story">
-<p><a name="p114" id="p114"></a>Nadia segue um link de hipertexto chamado “satellite image” esperando obter uma foto de satélite da região de Oaxaca. O link para a imagem de satélite é um link XHTML codificado como <code><a href=“http://exemplo.com/satimage/oaxaca”>imagem de satélite</a></code>. O navegador de Nadia analisa o URI e determina que seu <a href="#URI-scheme" shape="rect">esquema</a>  A configuração do navegador determina como ele localiza a informação identificada, que pode ser por cache de ações de obtenção prévias, por contato a um intermediário (como um servidor proxy), ou por acesso direto ao servidor identificado como uma porção do URI. Neste exemplo, o navegador abre uma conexão de rede com a porta 80 do servidor em “exemplo.com” e envia uma mensagem “GET”, como especificado pelo protocolo HTTP, requisitando uma representação do recurso.</p>
+<p><a name="p114" id="p114"></a>Nadia segue um link de hipertexto chamado “satellite image” esperando obter uma foto de satélite da região de Oaxaca. O link para a imagem de satélite é um link XHTML codificado como <code>&lt;a href=“http://exemplo.com/satimage/oaxaca”&gt;imagem de satélite&lt;/a&gt;</code>. O navegador de Nadia analisa o URI e determina que seu <a href="#URI-scheme" shape="rect">esquema</a>  A configuração do navegador determina como ele localiza a informação identificada, que pode ser por cache de ações de obtenção prévias, por contato a um intermediário (como um servidor proxy), ou por acesso direto ao servidor identificado como uma porção do URI. Neste exemplo, o navegador abre uma conexão de rede com a porta 80 do servidor em “exemplo.com” e envia uma mensagem “GET”, como especificado pelo protocolo HTTP, requisitando uma representação do recurso.</p>
 <p><a name="p115" id="p115"></a></p>
 </div>
 </div>
@@ -656,8 +655,8 @@ shape="rect">link de hipertexto (§4.4)</a> que seja parte de um documento SVG. 
 shape="rect">Tipos de Representação e Tipos de Mídia de Internet</a></h3>
 <p><a name="p124" id="p124"></a>Uma <a name="def-representation" id=
 "def-representation"><dfn>representação</dfn></a> constitui-se de dados que codificam informações sobre o estado do recurso. Representações não descrevem necessariamente o recurso, ou retratam algo semelhante ao recurso, ou representam o recurso em outros sentidos da palavra “representar”.
-<p><a name="p125" id="p125"></a>Representações de um recurso podem ser enviadas ou recebidas usando-se protocolos de interação. Esses protocolos, por sua vez, determinam o modo como representações são expressas na Web. O HTTP, por exemplo, possibilita a transmissão de representações como octet streams rotulados usando-se os tipos de mídia para Internet [<a href="#RFC2046" shape="rect">RFC2046</a>].</p>
-<p><a name="p126" id="p126"></a>Assim como é importante reutilizar esquemas de URI existentes sempre que possível, existem benefícios significativos em se usar octet streams rotulados conforme a mídia para representações mesmo no caso incomum em que se deve definir um novo esquema de URI e seu respectivo protocolo. Por exemplo, se o tempo de Oaxaca fosse entregue ao navegador de Nadia usando-se um protocolo diferente de HTTP, o software para produzir formatos como text/xhmtl+xml e image/png ainda seria usável se o novo protocolo suportasse transmissão desses tipos. Este é um exemplo do <a href="#orthogonal-specs" shape="rect"> princípio de especificações ortogonais (§5.1)</a>.</p>
+<p><a name="p125" id="p125"></a>Representações de um recurso podem ser enviadas ou recebidas usando-se protocolos de interação. Esses protocolos, por sua vez, determinam o modo como representações são expressas na Web. O HTTP, por exemplo, possibilita a transmissão de representações como octet streams rotulados usando-se os tipos de mídia para Internet [<a href="#RFC2046" shape="rect">RFC2046</a>].
+<a name="p126" id="p126"></a>Assim como é importante reutilizar esquemas de URI existentes sempre que possível, existem benefícios significativos em se usar octet streams rotulados conforme a mídia para representações mesmo no caso incomum em que se deve definir um novo esquema de URI e seu respectivo protocolo. Por exemplo, se o tempo de Oaxaca fosse entregue ao navegador de Nadia usando-se um protocolo diferente de HTTP, o software para produzir formatos como text/xhmtl+xml e image/png ainda seria usável se o novo protocolo suportasse transmissão desses tipos. Este é um exemplo do <a href="#orthogonal-specs" shape="rect"> princípio de especificações ortogonais (§5.1)</a>.</p>
 <div class="boxedtext">
 <p><a name="p127" id="p127"></a> <span class="practicelab">Boas práticas: <a name="pr-reuse-formats" id="pr-reuse-formats" shape=
 "rect">Reutilizar formatos de representação</a></span></p>
@@ -688,20 +687,15 @@ A semântica de um identificador de fragmentos é definida pelo conjunto de repr
 "#RFC2616" shape="rect">RFC2616</a>], por exemplo) não é responsável por fragmentos.</p>
 </div>
 <div class="section">
-<h4>3.2.2. <a name="frag-coneg" id="frag-coneg" shape=
-"rect">Identificadores de fragmento e negociação de conteúdo</a></h4>
-<p><a name="p136" id="p136"></a><a name="def-coneg" id=
-"def-coneg"><dfn>Negociação de conteúdo</dfn></a> refere-se à prática de disponibilizar diversas representações por meio do mesmo URI. A negociação entre o agente requerente e o servidor determina que representação se dá (em geral, com o objetivo de dar a “melhor” representação que um agente receptor pode processar).  HTTP é um exemplo de protocolo que possibilita que provedores de representação usem negociação de conteúdo.</p>
+<h4>3.2.2. <a name="frag-coneg" id="frag-coneg" shape="rect">Identificadores de fragmento e negociação de conteúdo</a></h4>
+<p><a name="p136" id="p136"></a><a name="def-coneg" id="def-coneg"><dfn>Negociação de conteúdo</dfn></a> refere-se à prática de disponibilizar diversas representações por meio do mesmo URI. A negociação entre o agente requerente e o servidor determina que representação se dá (em geral, com o objetivo de dar a “melhor” representação que um agente receptor pode processar).  HTTP é um exemplo de protocolo que possibilita que provedores de representação usem negociação de conteúdo.</p>
 <p><a name="p137" id="p137"></a>Alguns formatos de dados podem definir suas próprias regras de uso de sintaxe de identificador de fragmento para especificar diferentes tipos de subconjuntos, visualizações ou referências externas que sejam identificáveis como recursos secundários por aquele tipo de mídia. Portanto, provedores de representação devem gerenciar negociação de conteúdo de maneira cuidadosa quando usados com um URI que contenha um identificador de fragmento. Consideremos um exemplo em que o proprietário do URI “http://weather.exemplo.com/oaxaca/map#zicatela” usa negociação de conteúdo para dar duas representações do recurso identificado. Três situações podem surgir:</p>
 <ol>
 <li>1 A interpretação de “zicatela” é definida de maneira consistente por ambas as especificações de formato de dados. O provedor de representação decide quando definições de semântica de identificador de fragmentos são suficientemente consistentes.</li>
 <li>A interpretação de “zicatela” é definida de maneira inconsistente pelas especificações de formato de dados.</li>
 <li>A interpretação de “zicatela” é definida em uma especificação de formato de dados, mas não pela outra.</li> </ol>
 <p><a name="p138" id="p138"></a>A primeira situação  – semântica consistente – não apresenta problemas.</p>
-
-
-<p><a name="p139" id="p139"></a>O segundo caso é um erro de gerenciamento de servidor: provedores de representação não devem usar negociação de conteúdo para atender a formatos de representação que tenham semântica de identificador de fragmentos inconsistente. Essa situação também leva a
-<a href="#URI-collision" shape="rect"> colisão de URIs (§2.2.1)</a>.</p>
+<p><a name="p139" id="p139"></a>O segundo caso é um erro de gerenciamento de servidor: provedores de representação não devem usar negociação de conteúdo para atender a formatos de representação que tenham semântica de identificador de fragmentos inconsistente. Essa situação também leva a <a href="#URI-collision" shape="rect"> colisão de URIs (§2.2.1)</a>.</p>
 <p><a name="p140" id="p140"></a>O terceiro caso não é um erro de gerenciamento de servidor. É um meio pelo qual a Web pode crescer. Como a Web é um sistema distribuído em que formatos e agentes são entregues de uma maneira não uniforme, a arquitetura Web não restringe autores a usarem apenas formatos de “denominadores comuns mais baixos”. Autores de conteúdo podem aproveitar os novos formatos de dados ao mesmo tempo que garantem uma compatibilidade razoável com anteriores para agentes que ainda não os implementaram.</p>
 <p><a name="p141" id="p141"></a>
 No terceiro caso, o comportamento do agente receptor deve variar se o formato negociado define a semântica do identificador de fragmentos. Quando um formato de dados recebidos não define a semântica do identificador de fragmentos, o agente não deve realizar uma <a href="#no-silent-recovery" shape= "rect"> recuperação de erros silenciosa</a> a não ser que o usuário tenha consentido; ver [<a href="#CUAP" shape="rect">CUAP</a>] para mais comportamentos de agente sugeridos neste caso.</p>
@@ -987,12 +981,10 @@ shape="rect">formattingProperties-19</a> (a respeito da interoperabilidade no ca
 <div class="section">
 <h3>4.4. <a name="hypertext" id="hypertext" shape=
 "rect">Hypertexto</a></h3>
-<p><a name="p260" id="p260"></a>Uma característica típica da Web é que ela permite incorporar referências em outros recursos por meio de URIs. A simplicidade de se criar links de hipertexto usando URIs absolutos (<code>&lt;a href="http://www.example.com/foo"&gt;</code>) e referências URI relativas (<a href=”foo”> e (<code>&lt;a href="foo"&gt;</code>) é, em parte (talvez em grande parte), responsável pelo sucesso da Web hipertexto como a conhecemos hoje.
-</p>
+<p><a name="p260" id="p260"></a>Uma característica típica da Web é que ela permite incorporar referências em outros recursos por meio de URIs. A simplicidade de se criar links de hipertexto usando URIs absolutos (<code>&lt;a href="http://www.example.com/foo"&gt;</code>) e referências URI relativas <code>&lt;a href=”foo”&gt;</code> e (<code>&lt;a href="foo"&gt;</code>) é, em parte (talvez em grande parte), responsável pelo sucesso da Web hipertexto como a conhecemos hoje.</p>
 <p><a name="p261" id="p261"></a>Quando uma representação de um recurso contém uma referência a outro recurso, expressa com um URI identificando esse outro recurso, isso constitui um <a name= "def-link" id="def-link"><dfn>link</dfn></a> entre os dois recursos. Metadados adicionais também podem fazer parte do vínculo (ver [<a href="#XLink10" shape="rect">XLink10</a>]  
 <strong>Nota:</strong> Nota: Neste documento, o termo “vínculo” geralmente significa “relacionamento”, e não “conexão física”.</p>
 <div class="boxedtext">
-
 <p><a name="p262" id="p262"></a> <span class="practicelab">Boa prática: <a name="link-mechanism" id="link-mechanism" shape=
 "rect">Identificação de links</a></span></p>
 <p class="practice"><a name="p263" id="p263"></a> Uma especificação deve fornecer maneiras de se identificar vínculos para outros recursos, inclusive para recursos secundários (por meio de identificadores de fragmentos).
