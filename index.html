@@ -5,9 +5,8 @@
 <meta name="generator" content= "HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
 <meta http-equiv="Content-Type" content= "text/html; charset=utf-8" />
 <title>Arquitetura da World Wide Web</title>
-<link rel="stylesheet" type="text/css" href="style/default.css" />
-<link class="trcopy" rel="stylesheet" type="text/css" href=
-"http://www.w3.org/StyleSheets/TR/W3C-REC" />
+<link rel="stylesheet" type="text/css" href="https://www.w3.org/TR/webarch/style/default.css" />
+<link class="trcopy" rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-REC" />
 <meta name="RCSId" content= "$Id: Overview.html,v 1.6 2004/12/14 20:19:18 ijacobs Exp $" />
 </head>
 <body>
@@ -193,7 +192,7 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 <li class="tocline2"><a href="#media-types-infospace">4.6. Direções Futuras para Formatos de Dados</a></li>
 </ul>
 </li>
-<li class="tocline1"><a href="#general">5. Princípios Geraestá de Arquitetura</a>
+<li class="tocline1"><a href="#general">5. Princípios Gerais da Arquitetura</a>
 <ul class="toc">
 <li class="tocline2"><a href="#orthogonal-specs">5.1.Especificações Ortogonais</a></li>
 <li class="tocline2"><a href="#language-extensibility">5.2. Extensibilidade</a></li>
@@ -210,11 +209,8 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 <li class="tocline1"><a href="#acks">8. Agradecimentos</a></li>
 </ul>
 <div class="section">
-<h3 class="notoc"><a id="principles" name="principles" shape=
-"rect">Lista de Princípios, Restrições e Boas Práticas</a></h3>
-<p><a name="p10" id="p10"></a>Os princípios, as restrições e as boas práticas a seguir são discutidos neste documento e listados aqui por conveniência. Existe também 
- <a href=
-"summary.html" shape="rect"> um resumo independente</a>.</p>
+<h3 class="notoc"><a id="principles" name="principles" shape="rect">Lista de Princípios, Restrições e Boas Práticas</a></h3>
+<p><a name="p10" id="p10"></a>Os princípios, as restrições e as boas práticas a seguir são discutidos neste documento e listados aqui por conveniência. Existe também<a href="summary.html" shape="rect"> um resumo independente</a>.</p>
 <dl>
 <dt>Identificação</dt>
 <dd>
@@ -261,7 +257,7 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 <li><a href="#no-charset"> XML  e codificações de caracteres</a>(prática, 4.5.7)</li>
 </ul>
 </dd>
-<dt>Princípios Geraestá de Arquitetura</dt>
+<dt>Princípios Gerais de Arquitetura</dt>
 <dd>
 <ul>
 <li><a href="#pr-orthogonality"> Ortogonalidade</a> (princípio, 5.1)</li>
@@ -274,16 +270,11 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 <div class="section">
 <h2>1. <a id="intro" name="intro" shape=
 "rect">Introdução</a></h2>
-<p><a name="p11" id="p11"></a>A <a name="def-world-wide-web" id=
-"def-world-wide-web"><dfn>World Wide Web</dfn></a> (<a name=
-"def-www" id="def-www"><dfn><acronym>WWW</acronym></dfn></a>, ou simplesmente <a name="def-web" id=
-"def-web"><dfn><acronym>Web</acronym></dfn></a>) é um espaço de informações em que itens de interesse, referidos como recursos, são reconhecidos por identificadores globais chamados de Uniform Resource Identifiers. (<a name="def-uri-acronym" id=
-"def-uri-acronym"><dfn><acronym>URI</acronym></dfn></a>).</p>
+<p><a name="p11" id="p11"></a>A <a name="def-world-wide-web" id="def-world-wide-web"><dfn>World Wide Web</dfn></a> (<a name="def-www" id="def-www"><dfn><acronym>WWW</acronym></dfn></a>, ou simplesmente <a name="def-web" id="def-web"><dfn><acronym>Web</acronym></dfn></a>) é um espaço de informações em que itens de interesse, referidos como recursos, são reconhecidos por identificadores globais chamados de Uniform Resource Identifiers. (<a name="def-uri-acronym" id="def-uri-acronym"><dfn><acronym>URI</acronym></dfn></a>).</p>
 <p><a name="p12" id="p12"></a>Exemplos, como o da história a seguir, <a name="scenario" id="scenario" shape="rect"> em um cenário de viagem,</a> serão utilizados durante todo este documento para ilustrar o comportamento típico dos <a name="def-web-agent" id="def-web-agent"><dfn>Web agents</dfn></a>—pessoas ou softwares agindo sobre este espaço de informações. Um <a name="def-user-agent" id="def-user-agent"><dfn>user agent</dfn></a> age em nome de um usuário. Software agents incluem servidores, proxies, spiders, navegadores e tocadores multimídia.
 </p>
 <div class="boxedtext">
-<p><a name="p13" id="p13"></a> <span class=
-"storylab">História</span></p>
+<p><a name="p13" id="p13"></a> <span class="storylab">História</span></p>
 <div class="story">
 <p><a name="p14" id="p14"></a>Enquanto planeja uma viagem para o México, Nádia lê “Informação do tempo em Oaxaca: 'http://weather.example.com/oaxaca'” em uma revista de viagens. Nádia tem experiência suficiente com a Web para reconhecer que "http://weather.example.com/oaxaca" é uma URI e que é capaz de obter informações associadas a partir de seu navegador Web. Quando Nádia digita o URI em seu navegador:</p>
 <ol>
@@ -298,19 +289,16 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 <p><a name="p15" id="p15"></a>Este cenário ilustra as três bases arquitetônicas da Web que são discutidas neste documento:</p>
 <ol>
 <li>
-<p><a name="p16" id="p16"></a><a href="#identification" shape=
-"rect">Identificação (§2)</a>. 
+<p><a name="p16" id="p16"></a><a href="#identification" shape="rect">Identificação (§2)</a>. 
 URIs são usados para identificar recursos. Neste cenário de viagem, o recurso é um relatório periodicamente atualizado sobre o tempo em Oaxaca, e a URI é “http://weather.exemplo.com/oaxaca”.
 </p>
 </li>
 <li>
-<p><a name="p17" id="p17"></a><a href="#interaction" shape=
-"rect">Interação (§3)</a>. Agentes da Web se comunicam usando protocolos padronizados que permitem interação através de troca de mensagens que seguem a uma sintaxe e uma semântica definidas. Ao digitar um URI em uma caixa de diálogo ou selecionar um link de hipertexto, Nádia diz para seu navegador realizar uma ação de obtenção do recurso identificado pelo URI. Neste exemplo, o navegador envia um pedido HTTP GET (parte do protocolo HTTP) ao servidor em “weather.exemplo.com”, via TCP/IP porta 80, e o servidor retorna uma mensagem contendo o que determina ser uma representação do recurso no momento em que aquela representação foi gerada. Observe que este exemplo é específico da navegação de informações em hipertexto – outros tipos de interação são possíveis, tanto em navegadores como pelo uso de outros tipos de agentes da Web; nosso exemplo pretende ilustrar uma interação comum, não definir a gama de possíveis interações ou limitar as formas como agentes podem usar a Web.
+<p><a name="p17" id="p17"></a><a href="#interaction" shape="rect">Interação (§3)</a>. Agentes da Web se comunicam usando protocolos padronizados que permitem interação através de troca de mensagens que seguem a uma sintaxe e uma semântica definidas. Ao digitar um URI em uma caixa de diálogo ou selecionar um link de hipertexto, Nádia diz para seu navegador realizar uma ação de obtenção do recurso identificado pelo URI. Neste exemplo, o navegador envia um pedido HTTP GET (parte do protocolo HTTP) ao servidor em “weather.exemplo.com”, via TCP/IP porta 80, e o servidor retorna uma mensagem contendo o que determina ser uma representação do recurso no momento em que aquela representação foi gerada. Observe que este exemplo é específico da navegação de informações em hipertexto – outros tipos de interação são possíveis, tanto em navegadores como pelo uso de outros tipos de agentes da Web; nosso exemplo pretende ilustrar uma interação comum, não definir a gama de possíveis interações ou limitar as formas como agentes podem usar a Web.
 </p>
 </li>
 <li>
-<p><a name="p18" id="p18"></a><a href="#formats" shape=
-"rect">Formatos (§4)</a>. A maioria dos protocolos usados para obtenção e/ou submissão de representação utilizam uma sequência de uma ou mais mensagens que, juntas, contêm uma quantidade de dados e metadados de representação, para transferir a representação entre agentes. A escolha do protocolo de interação coloca limites nos formatos de dados e metadados de  representação que podem ser transmitidos. O HTTP, por exemplo, normalmente transmite um único octet stream (fluxo de octetos) mais metadados, e usa campos de cabeçalho “Content-Type” e “Content-Encoding” para identificar melhor o formato da representação. Neste cenário, a representação transferida está em XHTML, conforme identificado pelo campo de cabeçalho HTTP “Content-type” contendo o nome do tipo de mídia de Internet registrado, “application/xhtml+xml”. Esse nome do tipo de mídia de Internet indica que os dados de representação podem ser processados de acordo com a especificação do XHTML.
+<p><a name="p18" id="p18"></a><a href="#formats" shape="rect">Formatos (§4)</a>. A maioria dos protocolos usados para obtenção e/ou submissão de representação utilizam uma sequência de uma ou mais mensagens que, juntas, contêm uma quantidade de dados e metadados de representação, para transferir a representação entre agentes. A escolha do protocolo de interação coloca limites nos formatos de dados e metadados de  representação que podem ser transmitidos. O HTTP, por exemplo, normalmente transmite um único octet stream (fluxo de octetos) mais metadados, e usa campos de cabeçalho “Content-Type” e “Content-Encoding” para identificar melhor o formato da representação. Neste cenário, a representação transferida está em XHTML, conforme identificado pelo campo de cabeçalho HTTP “Content-type” contendo o nome do tipo de mídia de Internet registrado, “application/xhtml+xml”. Esse nome do tipo de mídia de Internet indica que os dados de representação podem ser processados de acordo com a especificação do XHTML.
 </p>
 <p><a name="p19" id="p19"></a>O navegador de Nádia está configurado e programado para interpretar a recepção de uma representação do tipo “application/xhtml+xml” como uma instrução para processar o conteúdo daquela representação de acordo com o modelo de renderização XHTML, incluindo todas as interações subsidiárias (tais como pedidos por folhas de estilo externas ou imagens in-line) requisitadas pela representação. No cenário, os dados de representação XHTML recebidos no pedido inicial instruem o navegador de Nádia a também obter e processar os mapas meteorológicos, cada um identificado por um URI e, assim, produzir uma ação de obtenção adicional, resultando em representações adicionais que são processadas pelo navegador de acordo com seus próprios formatos de dados (por exemplo, “application/svg+xml” indica o formato de dados SVG), e esse processo continua até que todos os formatos de dados tenham sido processados. O resultado de todo esse processamento, assim que o navegador chega a um estado estacionário de aplicativo que encerra a ação inicialmente solicitada por Nádia, é comumente referido como uma “página Web”.
 </p>
@@ -321,13 +309,11 @@ URIs são usados para identificar recursos. Neste cenário de viagem, o recurso 
 <p><a name="p21" id="p21"></a><img src="uri-res-rep-pt.png" alt="Um recurso (a informação sobre o tempo em Oaxaca) é identificada por uma URI em particupar e é representada por conteúdo pseudo-HTML" />
 </p>
 </div>
-<p><a name="p22" id="p22"></a>No restante deste documento, realçamos importantes pontos arquitetônicos a respeito de identificadores Web, protocolos e formatos. Também discutimos alguns importantes <a href=
-"#general" shape="rect">princípios geraestá de arquitetura (§5)</a> e como se aplicam à Web.</p>
+<p><a name="p22" id="p22"></a>No restante deste documento, realçamos importantes pontos arquitetônicos a respeito de identificadores Web, protocolos e formatos. Também discutimos alguns importantes <a href="#general" shape="rect">princípios gerais de arquitetura (§5)</a> e como se aplicam à Web.</p>
 <div class="section">
 <h3>1.1. <a name="about" id="about" shape="rect"> Sobre este documento</a></h3>
 <p><a name="p23" id="p23"></a>Este documento descreve as propriedades que desejamos da Web e as escolha de projeto que foram feitas para alcançá-las. Promove a reutilização de padrões existentes, quando adequado, e orienta sobre como inovar de maneira consistente na arquitetura Web.</p>
-<p><a name="p24" id="p24"></a>Os termos DEVE, NÃO DEVE, DEVERIA, NÃO DEVERIA e PODE são usados nos princípios, nas restrições e nas boas práticas de acordo com a [<a href="#RFC2119"
-shape="rect">RFC2119</a>.</p>
+<p><a name="p24" id="p24"></a>Os termos DEVE, NÃO DEVE, DEVERIA, NÃO DEVERIA e PODE são usados nos princípios, nas restrições e nas boas práticas de acordo com a [<a href="#RFC2119" shape="rect">RFC2119</a>.</p>
 <p><a name="p25" id="p25"></a>Este documento não inclui disposições de conformidade pelos seguintes motivos:
 </p>
 <ul>
@@ -337,8 +323,7 @@ shape="rect">RFC2119</a>.</p>
 <li>Não acreditamos que a inclusão de uma seção de conformidade pudesse aumentar a utilidade do documento.</li>
 </ul>
 <div class="section">
-<h4>1.1.1. <a name="doc-audience" id="doc-audience" shape=
-"rect">Público deste Documento</a></h4>
+<h4>1.1.1. <a name="doc-audience" id="doc-audience" shape="rect">Público deste Documento</a></h4>
 <p><a name="p26" id="p26"></a>TEste documento é destinado a estimular discussões sobre questões de arquitetura Web. O público-alvo do documento inclui:
 </p>
 <ol>
@@ -365,8 +350,7 @@ shape="rect">Especificações da Arquitetura (§7.1)</a> inclui referências a e
 <p><a name="p30" id="p30"></a>Muitos dos exemplos neste documento que envolvem atividades humanas supõem o conhecido modelo de interação Web (ilustrado no início da Introdução), em que uma pessoa segue um link por meio de um agente de usuário, o agente de usuário obtém e apresenta dados, o usuário segue outro link, etc. Este documento não discute em detalhes outros modelos de interação, como navegação por voz (veja, por exemplo, o [<a href="#VOICEXML2" shape="rect">VOICEXML2</a>]). A escolha do modelo de interação pode ter um impacto sobre o comportamento esperado do agente. Por exemplo, quando um agente de usuário gráfico rodando em um laptop ou em um dispositivo de mão encontra um erro, o agente de usuário pode reportar erros diretamente para o usuário por meio de sinais visuais e de áudio e apresentar ao usuário opções para resolver os erros. Por outro lado, quando alguém está navegando na Web por meio de entrada de voz e saída somente em áudio, interromper o diálogo para aguardar a entrada do usuário pode reduzir a usabilidade, uma vez que é muito fácil “perder a noção” quando se navega apenas com saída em áudio. Este documento não discute como os princípios, as restrições e as boas práticas identificadas aqui se aplicam em todos os contextos de interação.</p>
 </div>
 <div class="section">
-<h4>1.1.3. <a id="app-principles" name="app-principles" shape=
-"rect">Princípios, Restrições e Boas Práticas</a></h4>
+<h4>1.1.3. <a id="app-principles" name="app-principles" shape="rect">Princípios, Restrições e Boas Práticas</a></h4>
 <p><a name="p31" id="p31"></a>Os pontos importantes deste documento são classificados da seguinte forma:</p>
 <dl>
 <dt><a name="cat-principle" id="cat-principle" shape="rect">Princípio</a></dt>
@@ -407,12 +391,10 @@ shape="rect">Identificadores globais</a></span></p>
 <p><a name="p43" id="p43"></a>No entanto, nosso uso do termo recurso é intencionalmente mais amplo. Outras coisas, como carros e cães (e, se você imprimiu este documento em folhas físicas de papel, o artefato que está segurando em sua mão), são recursos também. Contudo, não são recursos de informação, porque sua essência não é informação. Embora seja possível descrever um grande número de coisas sobre um carro ou um cão em uma sequência de bits, a soma dessas coisas vai ser sempre uma aproximação do caráter essencial do recurso.</p>
 <p><a name="p44" id="p44"></a>Definimos o termo “recurso de informação” porque observamos que é algo útil em discussões sobre tecnologia Web e pode ser útil na construção de especificações para facilidades criadas para uso na Web.</p>
 <div class="boxedtext">
-<p><a name="p45" id="p45"></a> <span class=
-"constraintlab">Restrições: <a name="pr-uri-collision" id= "pr-uri-collision" shape="rect"> URIs identificam um único recurso</a></span></p>
+<p><a name="p45" id="p45"></a> <span class="constraintlab">Restrições: <a name="pr-uri-collision" id= "pr-uri-collision" shape="rect"> URIs identificam um único recurso</a></span></p>
 <p class="constraint"><a name="p46" id="p46"></a> Atribua URestá distintos para recursos distintos.</p>
 </div>
-<p><a name="p47" id="p47"></a>Como o escopo de um URI é global, o recurso identificado por um URI não depende do contexto em que o URI aparece (veja também a seção sobre <a class=
-"section" href="#indirect-identification" shape="rect">identificação indireta (§ 2.2.3))</a></p>
+<p><a name="p47" id="p47"></a>Como o escopo de um URI é global, o recurso identificado por um URI não depende do contexto em que o URI aparece (veja também a seção sobre <a class="section" href="#indirect-identification" shape="rect">identificação indireta (§ 2.2.3))</a></p>
 <p><a name="p48" id="p48"></a>[<a href="#URI" shape="rect">URI</a>] é um acordo sobre como a comunidade da Internet atribui nomes e os associa aos recursos que identificam. Os URIs são divididos em <a href="#URI-scheme" shape="rect">schemas (§ 2.4)</a>, que definem, por meio de sua especificação de esquema, o mecanismo pelo qual identificadores específicos de esquema são associados a recursos. Por exemplo, o esquema de URI “http” ([<a href="#RFC2616" shape= "rect">RFC2616</a>]) usa servidores HTTP baseados em TCP e DNS para fins de alocação e resolução de identificadores. Como consequência, identificadores como “http://exemplo.com/somepath#someFrag” muitas vezes assumem significado pela experiência da comunidade em realizar uma solicitação HTTP GET sobre o identificador e, se for obtida uma resposta positiva, interpretam a resposta como uma representação do recurso identificado. (Veja também <a href="#fragid" shape="rect">Identificadores de Fragmento (§ 2.6).</a> Logicamente, uma ação de obtenção como GET não é a única maneira de obter informações sobre um recurso. Pode-se também publicar um documento que pretende definir o significado de um determinado URI. Essas outras fontes de informação podem sugerir significados para tais identificadores, mas é uma decisão política local se essas sugestões devem ser levadas em consideração.</p>
 <p><a name="p49" id="p49"></a>Assim como se pode querer referir-se a uma pessoa por diferentes nomes (por nome completo, apenas o primeiro nome, apelido em esportes, apelido romântico e assim por diante), a arquitetura Web permite a associação de maestá de um URI a um recurso. URIs que identificam o mesmo recurso são chamados de <a name="def-uri-aliases" id="def-uri-aliases"><dfn>URI aliases</dfn></a>. The section on
 <a href="#uri-aliases" shape="rect">URI aliases (§2.3.1)</a>. A seção sobre aliases URI (§ 2.3.1) discute alguns dos possíveis custos de se criar múltiplos URIs para o mesmo recurso.</p>
@@ -459,24 +441,21 @@ Proprietários de URI podem organizar ou implantar infraestrutura para garantir 
 </p>
 </div>
 <div class="section">
-<h5>2.2.2.2. <a name="assign-other-schemes" id=
-"assign-other-schemes" shape="rect">Outros esquemas de alocação</a></h5>
+<h5>2.2.2.2. <a name="assign-other-schemes" id="assign-other-schemes" shape="rect">Outros esquemas de alocação</a></h5>
 <p><a name="p63" id="p63"></a>Alguns esquemas usam outras técnicas além de delegação de propriedade para evitar colisões técnicas. Por exemplo, a especificação para o esquema de URL de dados [<a href="#RFC2397"
 shape="rect">RFC2397</a>] especifica que o recurso identificado por um URI de esquema de dados tenha apenas uma representação possível. Os dados de representação tornam-se o URI que identifica o recurso. Assim, a própria especificação determina como os URestá de dados são alocados; não é possível nenhuma delegação.</p>
 <p><a name="p64" id="p64"></a>Outros esquemas (como “news:comp.text.xml”) dependem de um processo social. </p>
 </div>
 </div>
 <div class="section">
-<h4>2.2.3. <a name="indirect-identification" id=
-"indirect-identification" shape="rect">Identificação Indireta</a></h4> <p><a name="p65" id="p65"></a>Dizer que o URI “mailto:nadia@exemplo.com” identifica ao mesmo tempo uma caixa postal na Internet e Nádia, a pessoa, introduz uma colisão de URI. Contudo, podemos usar o URI para identificar indiretamente Nádia. É bem comum o uso de identificadores dessa forma.</p>
+<h4>2.2.3. <a name="indirect-identification" id="indirect-identification" shape="rect">Identificação Indireta</a></h4> <p><a name="p65" id="p65"></a>Dizer que o URI “mailto:nadia@exemplo.com” identifica ao mesmo tempo uma caixa postal na Internet e Nádia, a pessoa, introduz uma colisão de URI. Contudo, podemos usar o URI para identificar indiretamente Nádia. É bem comum o uso de identificadores dessa forma.</p>
 <p><a name="p66" id="p66"></a>Ao escutar um noticiário, pode-se ouvir uma reportagem sobre a Grã-Bretanha que começa: “Hoje, 10 Downing Street anunciou uma série de novas medidas econômicas”. De modo geral, “10 Downing Street” identifica a residência oficial do primeiro-ministro da Grã-Bretanha. Neste contexto, o repórter o está usando (já que a retórica em inglês permite) para identificar indiretamente o governo britânico. Da mesma forma, URIs identificam recursos, mas também podem ser usados em muitas construções para identificar indiretamente outros recursos. Políticas de definição adotadas de modo global tornam alguns URIs interessantes como identificadores de propósitos gerais. Políticas locais estabelecem o que identificam indiretamente.</p>
 <p><a name="p67" id="p67"></a>uponhamos que
 <code>nadia@example.com</code>  seja o endereço de e-mail de Nádia. Os organizadores de uma conferência da qual Nádia participe podem usar “mailto:nadia@exemplo.com” para se referirem indiretamente a ela (por exemplo, usando o URI como uma chave no banco de dados dos participantes da conferência). Isso não introduz uma colisão de URI.</p>
 </div>
 </div>
 <div class="section">
-<h3>2.3. <a name="identifiers-comparison" id=
-"identifiers-comparison" shape="rect">Comparações de URI</a></h3>
+<h3>2.3. <a name="identifiers-comparison" id="identifiers-comparison" shape="rect">Comparações de URI</a></h3>
 <p><a name="p68" id="p68"></a>URIs que são idênticos, em todos os caracteres, referem-se ao mesmo recurso. Como a Arquitetura Web permite a associação de múltiplos URIs a um determinado recurso, dois URIs, mesmo que não idênticos em todos os caracteres, podem ainda assim se referir ao mesmo recurso. Diferentes URIs não necessariamente referem-se a diferentes recursos, mas costuma haver um custo computacional mais alto para se determinar que diferentes URIs referem-se ao mesmo recurso.</p>
 <p><a name="p69" id="p69"></a>Para se reduzir o risco de um falso negativo (i.e., uma conclusão incorreta de que dois URIs não se referem ao mesmo recurso) ou um falso positivo (i.e., uma conclusão incorreta de que dois URIs referem-se ao mesmo recurso), algumas especificações descrevem testes de equivalência, além da comparação caractere a caractere. Agentes que chegam a conclusões com base em comparações que não são licenciadas por especificações relevantes responsabilizam-se por qualquer problema resultante; veja a seção sobre como <a class="addrefnb" href="#error-handling" shape="rect">lidar com erros (§5.3)</a> para mais informações sobre comportamento responsável ao se chegar a conclusões não licenciadas. A seção 6 de [<a href="#URI" shape="rect">URI</a>] traz mais informações sobre comparação de URIs e redução dos riscos de falsos negativos e positivos.</p>
 <p><a name="p70" id="p70"></a>Veja também a <a href=
