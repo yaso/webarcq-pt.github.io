@@ -7,9 +7,9 @@
 <title>Arquitetura da World Wide Web</title>
 <link rel="stylesheet" type="text/css" href="https://www.w3.org/TR/webarch/style/default.css" />
 <style type="text/css" media="screen">
-    body 
+    body
 	.selectorsReview tr td {padding:15px 8px !important}
-	.selectorsReview tr:nth-child(odd) {background: #f0f0f0;}  
+	.selectorsReview tr:nth-child(odd) {background: #f0f0f0;}
 	.translation {background-color:#f5f5f5; border:1px solid #ccc;border-radius:5px;}
 	.inner-translation {font-size: small; margin:1.0em 1.5em}
 	.inner-translation p {margin:0.5em 0;}
@@ -23,14 +23,14 @@
 <div class="inner-translation">
 <ol>
 <li>A única versão normativa deste documento é a versão em língua inglesa que se encontra no site do W3C.</li>
-<li>O presente documento traduzido para a língua portuguesa do Brasil, pode conter erros de tradução.</li>	
+<li>O presente documento traduzido para a língua portuguesa do Brasil, pode conter erros de tradução.</li>
 <li>A versão oficial e original, em inglês, deste documento, encontra-se em: <a href="https://www.w3.org/TR/webarch/">https://www.w3.org/TR/webarch/</a> e os seus direitos se dão conforme:<p class="copyright"><a hreflang="en" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2011 <a hreflang="en" href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup> (<a hreflang="en" href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a hreflang="en" href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a hreflang="en" href="http://www.keio.ac.jp/">Keio</a>), Todos os direitos reservados. São aplicáveis as disposições do W3C relativas a <a hreflang="en" href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">responsabilidades</a>, <a hreflang="en" href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">marcas</a> e <a hreflang="en" href="http://www.w3.org/Consortium/Legal/copyright-documents">uso de documentos</a>.</p>
 </li>
 </ol>
 <p>Este documento foi traduzido em 17 de maio de 2016 por: Yasodara Córdova e encontra-se hospedado no  &quot;Repositório de traduções do W3C Brasil Office &quot; em <a href="http://traducoes.w3c.br/TR/webarch/" title="Tradu&ccedil;&otilde;es W3C">http://traducoes.w3c.br/TR/webarch/</a>
 </p>
 <p>
-A tradução para a língua portuguesa do Brasil, foi  para este documento. Vale dizer,  as páginas remetidas pelos links nele constantes, estão em sua versão original em língua inglesa. 
+A tradução para a língua portuguesa do Brasil, foi  para este documento. Vale dizer,  as páginas remetidas pelos links nele constantes, estão em sua versão original em língua inglesa.
 </p><p>Por favor, relate erros  encontrados neste documento para <a href="http://ceweb.br/contato/">Centro de Estudos sobre Tecnologias Web.</a></p>
 </div>
 </div>
@@ -86,7 +86,7 @@ shape="rect"><strong> traduções.</strong></a>.</p>
 "/Consortium/Legal/privacy-statement#Public" shape=
 "rect">público</a> e para os <a href=
 "/Consortium/Legal/privacy-statement#Members" shape=
-"rect">Membros</a></p>. 
+"rect">Membros</a></p>.
 <hr /></div>
 </div>
 <div class="section">
@@ -313,7 +313,7 @@ shape="rect">6 da Política de Patentes do W3C.</a>.</p>
 <p><a name="p15" id="p15"></a>Este cenário ilustra as três bases arquitetônicas da Web que são discutidas neste documento:</p>
 <ol>
 <li>
-<p><a name="p16" id="p16"></a><a href="#identification" shape="rect">Identificação (§2)</a>. 
+<p><a name="p16" id="p16"></a><a href="#identification" shape="rect">Identificação (§2)</a>.
 URIs são usados para identificar recursos. Neste cenário de viagem, o recurso é um relatório periodicamente atualizado sobre o tempo em Oaxaca, e a URI é “http://weather.exemplo.com/oaxaca”.
 </p>
 </li>
@@ -416,7 +416,7 @@ shape="rect">Identificadores globais</a></span></p>
 <p><a name="p44" id="p44"></a>Definimos o termo “recurso de informação” porque observamos que é algo útil em discussões sobre tecnologia Web e pode ser útil na construção de especificações para facilidades criadas para uso na Web.</p>
 <div class="boxedtext">
 <p><a name="p45" id="p45"></a> <span class="constraintlab">Restrições: <a name="pr-uri-collision" id= "pr-uri-collision" shape="rect"> URIs identificam um único recurso</a></span></p>
-<p class="constraint"><a name="p46" id="p46"></a> Atribua URestá distintos para recursos distintos.</p>
+<p class="constraint"><a name="p46" id="p46"></a> Atribua URIs distintos para recursos distintos.</p>
 </div>
 <p><a name="p47" id="p47"></a>Como o escopo de um URI é global, o recurso identificado por um URI não depende do contexto em que o URI aparece (veja também a seção sobre <a class="section" href="#indirect-identification" shape="rect">identificação indireta (§ 2.2.3))</a></p>
 <p><a name="p48" id="p48"></a>[<a href="#URI" shape="rect">URI</a>] é um acordo sobre como a comunidade da Internet atribui nomes e os associa aos recursos que identificam. Os URIs são divididos em <a href="#URI-scheme" shape="rect">schemas (§ 2.4)</a>, que definem, por meio de sua especificação de esquema, o mecanismo pelo qual identificadores específicos de esquema são associados a recursos. Por exemplo, o esquema de URI “http” ([<a href="#RFC2616" shape= "rect">RFC2616</a>]) usa servidores HTTP baseados em TCP e DNS para fins de alocação e resolução de identificadores. Como consequência, identificadores como “http://exemplo.com/somepath#someFrag” muitas vezes assumem significado pela experiência da comunidade em realizar uma solicitação HTTP GET sobre o identificador e, se for obtida uma resposta positiva, interpretam a resposta como uma representação do recurso identificado. (Veja também <a href="#fragid" shape="rect">Identificadores de Fragmento (§ 2.6).</a> Logicamente, uma ação de obtenção como GET não é a única maneira de obter informações sobre um recurso. Pode-se também publicar um documento que pretende definir o significado de um determinado URI. Essas outras fontes de informação podem sugerir significados para tais identificadores, mas é uma decisão política local se essas sugestões devem ser levadas em consideração.</p>
@@ -441,7 +441,7 @@ shape="rect">Identificadores globais</a></span></p>
 </div>
 <div class="section">
 <h4>2.2.2. <a name="uri-assignment" id="uri-assignment" shape= "rect">Alocação de URI</a></h4>
-<p><a name="p56" id="p56"></a>Alocação de URI é o processo de se associar um URI a um recurso. A alocação pode ser realizada tanto por proprietários dos recursos quanto por terceiros. É importante evitar 
+<p><a name="p56" id="p56"></a>Alocação de URI é o processo de se associar um URI a um recurso. A alocação pode ser realizada tanto por proprietários dos recursos quanto por terceiros. É importante evitar
 <a href="#URI-collision" shape="rect">colisão de URI (§2.2.1)</a>.</p>
 <div class="section">
 <h5>2.2.2.1. <a name="uri-ownership" id="uri-ownership" shape= "rect">URI ownership</a></h5>
@@ -459,7 +459,7 @@ que delega a propriedade de partes de espaço URN para especificações de Names
 <p><a name="p60" id="p60"></a>Proprietários de URI são responsáveis por evitar a atribuição de URIs equivalentes a várias recursos. Assim, se a especificação de um esquema de URI prevê a delegação de um URI ou conjuntos organizados de URIs, deve-se tomar o cuidado de garantir que a propriedade, em última análise, reside nas mãos de uma única entidade social. Permitir múltiplos proprietários aumenta a probabilidade de colisões de URI.
 </p>
 <p><a name="p61" id="p61"></a>
-Proprietários de URI podem organizar ou implantar infraestrutura para garantir que estejam disponíveis representações de recursos associados e, quando apropriado, a interação com o recurso pela troca de representações. Existem expectativas sociais para a gestão de representação responsável <a class="addrefnb" href="#representation-management" shape="rect"> gestão da representação (§3.5)</a> 
+Proprietários de URI podem organizar ou implantar infraestrutura para garantir que estejam disponíveis representações de recursos associados e, quando apropriado, a interação com o recurso pela troca de representações. Existem expectativas sociais para a gestão de representação responsável <a class="addrefnb" href="#representation-management" shape="rect"> gestão da representação (§3.5)</a>
 (§ 3.5) pelos proprietários de URI. Não são discutidas aqui implicações sociais adicionaestá de propriedade de URI.</p>
 <p><a name="p62" id="p62"></a>Veja o boletim do TAG <a href= "http://www.w3.org/2001/tag/issues.html#siteData-36" shape= "rect">siteData-36</a>, que diz respeito à expropriação de autoridade de nome.
 </p>
@@ -467,7 +467,7 @@ Proprietários de URI podem organizar ou implantar infraestrutura para garantir 
 <div class="section">
 <h5>2.2.2.2. <a name="assign-other-schemes" id="assign-other-schemes" shape="rect">Outros esquemas de alocação</a></h5>
 <p><a name="p63" id="p63"></a>Alguns esquemas usam outras técnicas além de delegação de propriedade para evitar colisões técnicas. Por exemplo, a especificação para o esquema de URL de dados [<a href="#RFC2397"
-shape="rect">RFC2397</a>] especifica que o recurso identificado por um URI de esquema de dados tenha apenas uma representação possível. Os dados de representação tornam-se o URI que identifica o recurso. Assim, a própria especificação determina como os URestá de dados são alocados; não é possível nenhuma delegação.</p>
+shape="rect">RFC2397</a>] especifica que o recurso identificado por um URI de esquema de dados tenha apenas uma representação possível. Os dados de representação tornam-se o URI que identifica o recurso. Assim, a própria especificação determina como os URIs de dados são alocados; não é possível nenhuma delegação.</p>
 <p><a name="p64" id="p64"></a>Outros esquemas (como “news:comp.text.xml”) dependem de um processo social. </p>
 </div>
 </div>
@@ -510,14 +510,14 @@ shape="rect">Reutilização de representação</a></h4>
 </div>
 <p><a name="p82" id="p82"></a>
 
-Nesta história, há dois recursos: “um relatório sobre o clima atual em Oaxaca” e “um relatório sobre o clima em Oaxaca em 1º de agosto de 2004”. Os administradores do sítio de meteorologia de Oaxaca designam dois URIs a esses dois recursos diferentes. Em 1º de agosto de 2004, as representações para esses recursos são idênticas. O fato de existirem duas URestá diferentes produzindo representações idênticas não implica que as duas URIs sejam aliases.</p>
+Nesta história, há dois recursos: “um relatório sobre o clima atual em Oaxaca” e “um relatório sobre o clima em Oaxaca em 1º de agosto de 2004”. Os administradores do sítio de meteorologia de Oaxaca designam dois URIs a esses dois recursos diferentes. Em 1º de agosto de 2004, as representações para esses recursos são idênticas. O fato de existirem duas URIs diferentes produzindo representações idênticas não implica que as duas URIs sejam aliases.</p>
 </div>
 </div>
 <div class="section">
 <h3>2.4. <a name="URI-scheme" id="URI-scheme" shape="rect">Esquemas de URI
 </a></h3>
 <p><a name="p83" id="p83"></a>Na URI "http://weather.example.com/", o "http" que aparece antes dos parênteses (":") determina um esquema de URI.Cada esquema de URI tem uma especificação que explica os detalhes específicos de como os identificadores do esquema estão alocados e se associam com um recurso. A sintaxe da URI é, então, um sistema de nomeação federado e extensível onde cada especificação de esquema pode, inclusive, restringir a sintaxe e a semântica dos identificadores que estão naquele esquema.</p>
-<p><a name="p84" id="p84"></a>Exemplos de URestá de vários esquemas incluem:</p>
+<p><a name="p84" id="p84"></a>Exemplos de URIs de vários esquemas incluem:</p>
 <ul>
 <li>mailto:joe@example.org</li>
 <li>ftp://example.org/aDirectory/aFile</li>
@@ -526,7 +526,7 @@ Nesta história, há dois recursos: “um relatório sobre o clima atual em Oaxa
 <li>ldap://ldap.example.org/c=GB?objectClass?one</li>
 <li>urn:oasis:names:tc:entity:xmlns:xml:catalog</li>
 </ul>
-<p><a name="p85" id="p85"></a>Embora a arquitetura Web permita a definição de novos esquemas, introduzir um novo esquema é custoso. Muitos aspectos do processamento de URestá dependem de esquema, e uma grande quantidade de softwares lançados já processam URestá de esquemas bem conhecidos. Introduzir um novo esquema de URI exige o desenvolvimento e a implantação não apenas de softwares clientes para lidar com o esquema, mas também de agentes subordinados como gateways, proxies e caches. Veja a [<a href="#RFC2718" shape="rect">RFC2718</a>] para outras considerações e custos relacionados a projetos de esquema de URI.</p>
+<p><a name="p85" id="p85"></a>Embora a arquitetura Web permita a definição de novos esquemas, introduzir um novo esquema é custoso. Muitos aspectos do processamento de URIs dependem de esquema, e uma grande quantidade de softwares lançados já processam URIs de esquemas bem conhecidos. Introduzir um novo esquema de URI exige o desenvolvimento e a implantação não apenas de softwares clientes para lidar com o esquema, mas também de agentes subordinados como gateways, proxies e caches. Veja a [<a href="#RFC2718" shape="rect">RFC2718</a>] para outras considerações e custos relacionados a projetos de esquema de URI.</p>
 <p><a name="p86" id="p86"></a>Devido a esses custos, se existe um esquema de URI que supra as necessidades de um aplicativo, designers deveriam usá-lo em vez de inventar um.</p>
 <div class="boxedtext">
 <p><a name="p87" id="p87"></a> <span class="practicelab">Boas práticas: <a name="pr-reuse-uri-schemes" id="pr-reuse-uri-schemes"
@@ -544,7 +544,7 @@ shape="rect">cenário de viagem</a>: deveria o agente fornecedor de informaçõe
 <ul>
 <li>Não existe um modo geralmente aceito para localizar a especificação do esquema.</li>
 <li>Outra pessoa pode estar usando o esquema para propósitos diversos.</li>
-<li>Não se deve esperar que softwares generalistas façam algo útil com URestá desse esquema além de uma comparação de URIs. </li>
+<li>Não se deve esperar que softwares generalistas façam algo útil com URIs desse esquema além de uma comparação de URIs. </li>
 </ul>
 <p><a name="p92" id="p92"></a>Uma motivação enganosa para se registrar um novo esquema de URI é permitir que um agente de software inicialize um determinado aplicativo ao obter uma representação. O mesmo pode ser alcançado com custos menores expedindo-se com base no tipo de representação, assim possibilitando o uso de protocolos de transferência e implementações existentes.
 </p>
@@ -567,7 +567,7 @@ shape="rect">direções futuras para formatos de dados (§4.6) </a>.</p>
 <p><a name="p100" id="p100"></a>A URI exemplo utilizada no
 <a href="#scenario" shape="rect">cenário de viagem</a> (“http://weather.exemplo.com/oaxaca”) sugere a um leitor humano que o recurso identificado tem alguma relação com o tempo em Oaxaca. Um sítio informando sobre o tempo em Oaxaca poderia muito bem ser identificado também pelo URI “http://vjc.exemplo.com/315”. E o URI “http://weather.exemplo.com/vancouver” pode identificar o recurso “meu álbum de fotos”.</p>
 
-<p><a name="p101" id="p101"></a>Por outro lado, o URI “mailto:joe@exemplo.com” indica que o URI refere-se a uma caixa postal. A especificação do esquema de URI “mailto” autoriza agentes a inferirem que URestá dessa forma identificam caixas postaestá de Internet.</p>
+<p><a name="p101" id="p101"></a>Por outro lado, o URI “mailto:joe@exemplo.com” indica que o URI refere-se a uma caixa postal. A especificação do esquema de URI “mailto” autoriza agentes a inferirem que URIs dessa forma identificam caixas postaestá de Internet.</p>
 <p><a name="p102" id="p102"></a>Algumas autoridades de definição de URI documentam e publicam suas regras de definição de URI. Para mais informações sobre opacidade de URI, ver os boletins do TAG <a href=
 "http://www.w3.org/2001/tag/issues.html#metadataInURI-31" shape= "rect">metaDataInURI-31</a> e <a href=
 "http://www.w3.org/2001/tag/issues.html#siteData-36" shape= "rect">siteData-36</a>.
@@ -584,7 +584,7 @@ shape="rect">direções futuras para formatos de dados (§4.6) </a>.</p>
 </div>
 <p><a name="p105" id="p105"></a>O <a name="def-fragid" id=
 "def-fragid"><dfn>identificador de fragmento</dfn></a> de um URI permite a identificação indireta de um <a name=
-"def-secondary-resource" id="def-secondary-resource"><dfn>recurso secundário</dfn></a>  para referir-se a um recurso primário e a informações de identificação adicionais. O recurso secundário pode ser uma parte ou subgrupo do recurso primário, uma visualização de representações do recurso primário, ou algum outro recurso definido ou descrito por essas representações. Os termos “recurso primário” e “recurso secundário” são definidos na seção 3.5 de [<a href="#URI" shape="rect">URI</a>].</p> 
+"def-secondary-resource" id="def-secondary-resource"><dfn>recurso secundário</dfn></a>  para referir-se a um recurso primário e a informações de identificação adicionais. O recurso secundário pode ser uma parte ou subgrupo do recurso primário, uma visualização de representações do recurso primário, ou algum outro recurso definido ou descrito por essas representações. Os termos “recurso primário” e “recurso secundário” são definidos na seção 3.5 de [<a href="#URI" shape="rect">URI</a>].</p>
 <p><a name="p106" id="p106"></a>Os termos "primário" e “secundário”, nesse contexto, não limitam a natureza do recurso – não são classes. Neste contexto, primário e secundário simplesmente indicam que existe uma relação entre os recursos para os propósitos de um URI: o URI com um identificador de fragmento. Qualquer recurso pode ser identificado como um recurso secundário. Pode também ser identificado usando um URI sem um identificador de fragmento, e um recurso pode ser identificado como um recurso secundário por meio de múltiplos URIs. O propósito desses termos é possibilitar uma discussão sobre a relação entre esses recursos, não limitar a natureza de um recurso.</p>
 <p><a name="p107" id="p107"></a>A interpretação de identificadores de fragmento é discutida na sessão sobre <a href= "#media-type-fragid" shape="rect">tipos de mídia e semântica de identificadores de fragmento (§3.2.1)</a>.</p>
 <p><a name="p108" id="p108"></a>Veja o boletim do TAG <a href= "http://www.w3.org/2001/tag/issues.html#abstractComponentRefs-37" shape="rect">abstractComponentRefs-37</a>, que diz respeito ao uso de identificadores de fragmento com nomes de namespaces para identificar componentes abstratos.</p>
@@ -667,9 +667,9 @@ ou outros parâmetros.  Ver os boletins do TAG <a href=
 "http://www.w3.org/2001/tag/issues.html#uriMediaType-9" shape= "rect">uriMediaType-9</a> e <a href=
 "http://www.w3.org/2001/tag/issues.html#mediaTypeManagement-45"
 shape="rect">mediaTypeManagement-45</a> que dizem respeito a aspectos do mecanismo de tipo de mídia.</p>
-<div class="section"> 
+<div class="section">
 <h4>3.2.1. <a id="media-type-fragid" name="media-type-fragid" shape="rect">Tipos de representação e semântica do identificador de fragmentos</a></h4>
-<p><a name="p130" id="p130"></a>O tipo de mídia de Internet define a sintaxe e a semântica do identificador de fragmento (apresentado em 
+<p><a name="p130" id="p130"></a>O tipo de mídia de Internet define a sintaxe e a semântica do identificador de fragmento (apresentado em
 <a href="#fragid" shape="rect"> Identificadores de Fragmento (§2.6)</a>), se houver, que possa ser usado em conjunto com uma representação.</p>
 <div class="boxedtext">
 <p><a name="p131" id="p131"></a> <span class=
@@ -784,7 +784,7 @@ necessarily correspond to any resource identified by a URI.</p>
 <p><a name="p173" id="p173"></a> <span class=
 "storylab">History</span></p>
 <div class="story">
-<p><a name="p174" id="p174"></a>Como Nadia considera útil o sítio do tempo de Oaxaca, ela envia observações acerca dele a seu amigo Dirk, recomendando-lhe que o visite em “http://weather.exemplo.com/oaxaca”. Dirk clica no link de hipertexto resultante no e-mail que recebe e é frustrado por um 404 (não encontrado). Dirk tenta de novo no dia seguinte e recebe uma representação com notícias que são de duas semanas atrás. Ele tenta mais uma vez no dia seguinte, mas recebe uma representação que afirma que o tempo em Oaxaca está ensolarado, apesar de seus amigos em Oaxaca lhe dizerem por telefone que, na verdade, está chovendo. 
+<p><a name="p174" id="p174"></a>Como Nadia considera útil o sítio do tempo de Oaxaca, ela envia observações acerca dele a seu amigo Dirk, recomendando-lhe que o visite em “http://weather.exemplo.com/oaxaca”. Dirk clica no link de hipertexto resultante no e-mail que recebe e é frustrado por um 404 (não encontrado). Dirk tenta de novo no dia seguinte e recebe uma representação com notícias que são de duas semanas atrás. Ele tenta mais uma vez no dia seguinte, mas recebe uma representação que afirma que o tempo em Oaxaca está ensolarado, apesar de seus amigos em Oaxaca lhe dizerem por telefone que, na verdade, está chovendo.
 Dirk e Nadia concluem que os proprietários do URI são não confiáveis ou imprevisíveis. Embora o proprietário do URI tenha escolhido a Web como meio de comunicação, o proprietário perdeu dois clientes devido a uma gestão ineficaz de representação.</p>
 </div>
 </div>
@@ -794,7 +794,7 @@ O proprietário de um URI pode fornecer zero ou mais representações autorizada
 <p><a name="p176" id="p176"></a> <span class="practicelab">Boa prática: <a name="pr-describe-resource" id="pr-describe-resource" shape="rect">Representação disponível</a></span></p>
 <p class="practice"><a name="p177" id="p177"></a>Um proprietário de URI DEVE fornecer representações do recurso que ele identifica. </p>
 </div>
-<p><a name="p178" id="p178"></a>Por exemplo, proprietários de URestá de namespaces XML devem usá-los para identificar um <a href= "#namespace-document" shape="rect">documento de namespace (§4.5.4)</a>.</p>
+<p><a name="p178" id="p178"></a>Por exemplo, proprietários de URIs de namespaces XML devem usá-los para identificar um <a href= "#namespace-document" shape="rect">documento de namespace (§4.5.4)</a>.</p>
 <p><a name="p179" id="p179"></a>Só o fato de haver representações disponíveis não significa que é sempre desejável obtê-las. Na verdade, em alguns casos, o oposto é verdadeiro.</p>
 <div class="boxedtext">
 <p><a name="p180" id="p180"></a> <span class=
@@ -899,7 +899,7 @@ shape="rect">formatos baseados em XML(§4.5)</a> são textuais. Cada vez mais, f
 </div>
 </div>
 <p><a name="p223" id="p223"></a>Dirk e Nadia escolheram uma política de mudança de namespace que lhes permite evitar a alteração do nome do namespace sempre que haja mudanças que não afetem a conformidade do conteúdo e do software implantados. Eles poderiam ter escolhido uma política diferente, por exemplo que qualquer novo elemento ou atributo deva pertencer a um namespace diferente do original. Seja qual for a política escolhida, deve-se definir claramente as expectativas para os usuários do formato.</p>
-<p><a name="p224" id="p224"></a>Em geral, a alteração do nome do namespace de um elemento muda completamente o nome do elemento. Se "a" e "b" são ligados a duas URestá diferentes, <code>a:element</code> e <code>b:element</code> são tão distintos quanto <code>a:eieio</code> e <code>a:xyzzy</code>. Em termos práticos, isso significa que os aplicativos implementados precisarão ser atualizados, a fim de reconhecer a nova linguagem; o custo da atualização pode ser muito alto.</p>
+<p><a name="p224" id="p224"></a>Em geral, a alteração do nome do namespace de um elemento muda completamente o nome do elemento. Se "a" e "b" são ligados a duas URIs diferentes, <code>a:element</code> e <code>b:element</code> são tão distintos quanto <code>a:eieio</code> e <code>a:xyzzy</code>. Em termos práticos, isso significa que os aplicativos implementados precisarão ser atualizados, a fim de reconhecer a nova linguagem; o custo da atualização pode ser muito alto.</p>
 <p><a name="p225" id="p225"></a>Conclui-se que há vantagens e desvantagens importantes a serem consideradas quando se decide sobre uma política de mudança de namespace. Se um vocabulário não tem pontos de extensibilidade (isto é, se ele não permite elementos ou atributos de namespaces estranhos, ou se tem um mecanismo para lidar com nomes não reconhecidos do mesmo namespace), pode ser absolutamente necessário mudar o nome do namespace. Linguagens que permitem alguma forma de extensibilidade sem a necessidade de mudar o nome do namespace são mais aptas a evoluir normalmente.</p>
 <div class="boxedtext">
 <p><a name="p226" id="p226"></a> <span class="practicelab">Boa
@@ -978,7 +978,7 @@ shape="rect">formattingProperties-19</a> (a respeito da interoperabilidade no ca
 <h3>4.4. <a name="hypertext" id="hypertext" shape=
 "rect">Hypertexto</a></h3>
 <p><a name="p260" id="p260"></a>Uma característica típica da Web é que ela permite incorporar referências em outros recursos por meio de URIs. A simplicidade de se criar links de hipertexto usando URIs absolutos (<code>&lt;a href="http://www.example.com/foo"&gt;</code>) e referências URI relativas <code>&lt;a href=”foo”&gt;</code> e (<code>&lt;a href="foo"&gt;</code>) é, em parte (talvez em grande parte), responsável pelo sucesso da Web hipertexto como a conhecemos hoje.</p>
-<p><a name="p261" id="p261"></a>Quando uma representação de um recurso contém uma referência a outro recurso, expressa com um URI identificando esse outro recurso, isso constitui um <a name= "def-link" id="def-link"><dfn>link</dfn></a> entre os dois recursos. Metadados adicionais também podem fazer parte do vínculo (ver [<a href="#XLink10" shape="rect">XLink10</a>]  
+<p><a name="p261" id="p261"></a>Quando uma representação de um recurso contém uma referência a outro recurso, expressa com um URI identificando esse outro recurso, isso constitui um <a name= "def-link" id="def-link"><dfn>link</dfn></a> entre os dois recursos. Metadados adicionais também podem fazer parte do vínculo (ver [<a href="#XLink10" shape="rect">XLink10</a>]
 <strong>Nota:</strong> Nota: Neste documento, o termo “vínculo” geralmente significa “relacionamento”, e não “conexão física”.</p>
 <div class="boxedtext">
 <p><a name="p262" id="p262"></a> <span class="practicelab">Boa prática: <a name="link-mechanism" id="link-mechanism" shape=
@@ -1037,7 +1037,7 @@ shape="rect">Links de hipertexto</a></span></p>
 "rect">xlinkScope-23</a>.</p> </div>
 <div class="section"> <h4>4.5.3. <a name="xml-namespaces" id="xml-namespaces" shape=
 "rect">XML namespaces</a></h4>
-<p><a name="p281" id="p281"></a>O propósito de um namespace de XML (definido em [<a href="#XMLNS" shape="rect">XMLNS</a>]) é permitir a implantação de vocabulários XML (em que são definidos nomes de elementos e de atributos) em um ambiente global e reduzir o risco de colisões de nome em determinado documento quando se combinam vocabulários. Por exemplo, especificações de MathML e SVG definem o elemento <code>set</code>. Embora dados XML vindos de diferentes formatos, como MathML e SVG, possam ser combinados em um único documento, neste caso poderia haver ambiguidade sobre qual elemento <code>set</code> era o foco. Namespaces de XML reduzem o risco de colisões de nome, aproveitando os sistemas existentes para atribuição de nomes de escopo global: o sistema URI (ver também a seção sobre <a class="addrefnb" href="#uri-assignment" shape= "rect">alocação de URI (§2.2.2)</a>). Ao se utilizar namespaces de XML, cada nome local em um vocabulário XML é emparelhado a um URI (o chamado namespace de URI), para distinguir o nome local dos nomes locais em outros vocabulários.</p> 
+<p><a name="p281" id="p281"></a>O propósito de um namespace de XML (definido em [<a href="#XMLNS" shape="rect">XMLNS</a>]) é permitir a implantação de vocabulários XML (em que são definidos nomes de elementos e de atributos) em um ambiente global e reduzir o risco de colisões de nome em determinado documento quando se combinam vocabulários. Por exemplo, especificações de MathML e SVG definem o elemento <code>set</code>. Embora dados XML vindos de diferentes formatos, como MathML e SVG, possam ser combinados em um único documento, neste caso poderia haver ambiguidade sobre qual elemento <code>set</code> era o foco. Namespaces de XML reduzem o risco de colisões de nome, aproveitando os sistemas existentes para atribuição de nomes de escopo global: o sistema URI (ver também a seção sobre <a class="addrefnb" href="#uri-assignment" shape= "rect">alocação de URI (§2.2.2)</a>). Ao se utilizar namespaces de XML, cada nome local em um vocabulário XML é emparelhado a um URI (o chamado namespace de URI), para distinguir o nome local dos nomes locais em outros vocabulários.</p>
 <p><a name="p282" id="p282"></a> O uso de URIs confere benefícios adicionais. Primeiro, cada par URI/nome local pode ser mapeado para outro URI, fundamentando os termos do vocabulário na Web. Estes termos podem ser recursos importantes, e, portanto, é interessante ser capaz de se associar URIs a eles.</p>
 <p><a name="p283" id="p283"></a>[<a href="#RDFXML" shape= "rect">RDFXML</a>] usa concatenação simples do namespace de URI e o nome local para criar um URI para o termo identificado. Outros mapeamentos devem ser mais adequados para namespaces hierárquicos; ver o boletim relacionado do TAG <a href= "http://www.w3.org/2001/tag/issues.html#abstractComponentRefs-37" shape="rect">abstractComponentRefs-37</a>.</p>
 <p><a name="p284" id="p284"></a>Programadores de formatos de dados baseados em XML que declaram namespaces possibilitam, assim, reutilizar os formatos de dados e combiná-los de novas maneiras ainda não imaginadas. Não declarar namespaces torna tal reutilização maestá difícil, até mesmo inviável em alguns casos.</p>
@@ -1045,7 +1045,7 @@ shape="rect">Links de hipertexto</a></span></p>
 <p><a name="p285" id="p285"></a> <span class="practicelab">Boa prática: <a name="use-namespaces" id="use-namespaces" shape= "rect">Adoção de namespaces</a></span></p> <p class="practice"><a name="p286" id="p286"></a> Uma especificação que estabelece um vocabulário XML DEVE colocar todos os nomes de elementos e nomes de atributos globais em um namespace.</p>
 </div>
 <p><a name="p287" id="p287"></a>Atributos são sempre definidos pelo elemento em que aparecem. Um atributo “global”, isto é, aquele que pode aparecer de forma significativa em elementos de vários tipos, incluindo elementos em outros namespaces, deve ser explicitamente colocado em um namespace. Atributos locais, aqueles associados a apenas um tipo de elemento, não precisam ser incluídos em um namespace, já que seu significado será sempre claro pelo contexto fornecido por esse elemento.</p>
-<p><a name="p288" id="p288"></a>O atributo <code>type</code> do namespace do W3C XML Schema Instance "http://www.w3.org/2001/XMLSchema-instance" ([<a href="#XMLSCHEMA" shape="rect">XMLSCHEMA</a>], seção 4.3.2) é um exemplo de atributo global. Pode ser usado por autores de qualquer vocabulário para fazer uma afirmação em dados de instância sobre o tipo do elemento em que aparece. 
+<p><a name="p288" id="p288"></a>O atributo <code>type</code> do namespace do W3C XML Schema Instance "http://www.w3.org/2001/XMLSchema-instance" ([<a href="#XMLSCHEMA" shape="rect">XMLSCHEMA</a>], seção 4.3.2) é um exemplo de atributo global. Pode ser usado por autores de qualquer vocabulário para fazer uma afirmação em dados de instância sobre o tipo do elemento em que aparece.
 
 
 Como é um atributo global, deve ser sempre qualificado. O atributo <code>frame</code>  tabela HTML é um exemplo de atributo local. Não há qualquer valor em colocar esse atributo em um namespace, uma vez que é improvável que o atributo seja útil em um elemento diferente de uma tabela HTML.
@@ -1302,9 +1302,9 @@ This W3C Team Submission está disponível em http://www.w3.org/TR/chips/.</dd>
 <dt><a name="CUAP" id="CUAP" shape="rect">CUAP</a></dt>
 <dd><cite><a href="http://www.w3.org/TR/cuap" shape="rect">Common User Agent Problems</a></cite>, K. Dubost, Janeiro 2003. This W3C
 Team Submission está disponível em http://www.w3.org/TR/cuap.</dd>
-<dt><a name="Cool" id="Cool" shape="rect">Cool</a></dt> 
+<dt><a name="Cool" id="Cool" shape="rect">Cool</a></dt>
 <dd><cite><a href="http://www.w3.org/Provider/Style/URI.html"
-shape="rect">Cool URestá don't change</a></cite> T. Berners-Lee, W3C, 1998 Disponível em http://www.w3.org/Provider/Style/URI.  Observem que o título é, de certa forma, enganoso. Não são os URIs que mudam, mas o que eles identificam.</dd>
+shape="rect">Cool URIs don't change</a></cite> T. Berners-Lee, W3C, 1998 Disponível em http://www.w3.org/Provider/Style/URI.  Observem que o título é, de certa forma, enganoso. Não são os URIs que mudam, mas o que eles identificam.</dd>
 <dt><a name="Eng90" id="Eng90" shape="rect">Eng90</a></dt>
 <dd><cite><a href= "http://www.bootstrap.org/augment/AUGMENT/132082.html" shape=
 "rect">Knowledge-Domain Interoperability and an Open Hyperdocument System</a></cite>, D. C. Engelbart, Junho 1990.</dd>
@@ -1327,7 +1327,7 @@ Editors,Recomendação do W3C, 04&#160;February&#160;2004, http://www.w3.org/TR/
 "http://www1.ietf.org/mail-archive/web/ietf-announce/current/msg00752.html"
 shape="rect">anúncio feito em 8 Dezembro de 2004</a>, o IESG aprovou <a href= "http://www.w3.org/International/iri-edit/draft-duerst-iri-11.txt" shape="rect">draft-duerst-iri-11</a>  como Padrão Proposto do IETF. Referências à especificação IRI no Volume Um de <cite>Arquitetura da Web</cite> são a esse Padrão Proposto. Como o IETF lançou inúmeros Pedidos de Comentários [Request For Comments – (<acronym>RFC</acronym>)] para a especificação, esta Recomendação W3C pode ser atualizada para se referir ao RFC. Ver também <a href= "http://www.w3.org/International/iri-edit/draft-duerst-iri.html" shape="rect">últimas informações sobre a especificação IRI.</a>.</dd> <dt><a name="MEDIATYPEREG" id="MEDIATYPEREG" shape=
 "rect">MEDIATYPEREG</a></dt>
-<dd>IANA's <a href= "http://www.iana.org/assignments/media-types/index.html" shape= "rect">O Registro on-line de Tipos de Mídia de Internet</a> está disponível em http://www.iana.org/assignments/media-types/index.html.</dd> 
+<dd>IANA's <a href= "http://www.iana.org/assignments/media-types/index.html" shape= "rect">O Registro on-line de Tipos de Mídia de Internet</a> está disponível em http://www.iana.org/assignments/media-types/index.html.</dd>
 <dt><a name="OWL10" id="OWL10">OWL10</a></dt>
 <dd><cite><a href="http://www.w3.org/TR/owl-ref/">OWL Web Ontology Language Reference</a></cite>, M. Dean, G. Schreiber, organizadores, Recomendação W3C, 10 de fevereiro de 2004, http://www.w3.org/TR/2004/REC-owl-ref-20040210/. <a href= "http://www.w3.org/TR/owl-ref/">última versão</a> Disponível em http://www.w3.org/TR/owl-ref/.</dd>
 <dt><a name="P3P10" id="P3P10">P3P10</a></dt>
@@ -1377,7 +1377,7 @@ Petke, I. King, Novembro 1999. Disponível em http://www.ietf.org/rfc/rfc2717.tx
 Masinter, H. Alvestrand, D. Zigmond, R. Petke, Novembro 1999. Disponível em: http://www.ietf.org/rfc/rfc2718.txt.</dd>
 <dt><a name="RFC2818" id="RFC2818" shape="rect">RFC2818</a></dt>
 <dd>IETF <cite><a href="http://www.ietf.org/rfc/rfc2818.txt" shape= "rect">RFC 2818: HTTP Over TLS</a></cite>, E. Rescorla, Maio 2000.
-Disponível em: http://www.ietf.org/rfc/rfc2818.txt.</dd> 
+Disponível em: http://www.ietf.org/rfc/rfc2818.txt.</dd>
 <dt><a name="RFC3023" id="RFC3023" shape="rect">RFC3023</a></dt>
 <dd>IETF <cite><a href="http://www.ietf.org/rfc/rfc3023.txt" shape= "rect">RFC 3023: XML Media Types</a></cite>, M. Murata, S. St.
 Laurent, D. Kohn, Janeiro 2001. Disponível em: http://www.ietf.org/rfc/rfc3023.txt</dd>
@@ -1412,13 +1412,13 @@ shape="rect">draft-fielding-uri-rfc2396bis-07</a> como padrão do IETF. Referên
 <dt><a name="UniqueDNS" id="UniqueDNS" shape=
 "rect">UniqueDNS</a></dt>
 <dd><cite><a href= "http://www.icann.org/correspondence/iab-tech-comment-27sept99.htm"
-shape="rect">IAB Technical Comment on the Unique DNS Root</a></cite>, B. Carpenter, 27 Setembro 1999. Disponível em http://www.icann.org/correspondence/iab-tech-comment-27sept99.htm.</dd> 
+shape="rect">IAB Technical Comment on the Unique DNS Root</a></cite>, B. Carpenter, 27 Setembro 1999. Disponível em http://www.icann.org/correspondence/iab-tech-comment-27sept99.htm.</dd>
 <dt><a name="VOICEXML2" id="VOICEXML2">VOICEXML2</a></dt>
 <dd><cite><a href="http://www.w3.org/TR/voicexml20">Voice Extensible Markup Language (VoiceXML) Version 2.0</a></cite>, B.
 Porter, A. Hunt, K. Rehor, <em>et. al.,</em> Editors,Recomendação do W3C, 16&#160;March&#160;2004,
 http://www.w3.org/TR/2004/REC-voicexml20-20040316/. <a href= "http://www.w3.org/TR/voicexml20">última versão</a> Disponível em
 http://www.w3.org/TR/voicexml20.</dd>
-<dt><a name="XHTML11" id="XHTML11">XHTML11</a></dt> 
+<dt><a name="XHTML11" id="XHTML11">XHTML11</a></dt>
 <dd><cite><a href="http://www.w3.org/TR/xhtml11/">XHTML™ 1.1 -
 Module-based XHTML</a></cite>, S. McCarron, M. Altheim, Editors,Recomendação do W3C, 31&#160;Maio&#160;2001,
 http://www.w3.org/TR/2001/REC-xhtml11-20010531. <a href= "http://www.w3.org/TR/xhtml11/">última versão</a> Disponível em http://www.w3.org/TR/xhtml11/.</dd>
